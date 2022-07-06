@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner1{
+    width: 100%;
+    height: 100vh; 
+    /* note dùng linear-gradient và truyền vào 2 màu mới kết hợp với img được */
+    background-image:  linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(./img/hcmdawn.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    /* center */
+    /* width: 500px ;
+    position:absolute;
+    top:50%;
+    left: 50%;  chỉ dùng cho box hình vuông 
+    margin: -250px 0 0 -250px; */
+    min-height: 200px;
+    width: 700px;
+    margin: 64px 32px;
+    border-radius: 10px;
+    /* make backgroud */
+    background-color : rgba(212, 205, 209, 0.25);
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:  30px;
+    font-weight: 400px;
+    background-color: rgba(221, 173, 183, 0.7) ;
+    min-height: 100px;
+    width: 150px;
+    margin: 30px 20px;
+    position: relative;
+}
+
+.box >p {
+    font-weight: bold;
+    font-size: 70px;
+    margin: 5px 20px 0px 30px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    margin: 5px 20px 0px 30px;  
+    text-transform: capitalize ; 
+    
+}
+
+.endCountDown-attribute{
+    margin : 10px 0px;
+    font-size: 3rem;
+    color: #F9C1AA;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+.waitingEndImg{
+    font-size: 3rem;
+    color: #F9F1E4;
+    
+    font-family: 'The Nautigal', cursive;
+    font-weight: bolder;
+    text-align: center;
+}
